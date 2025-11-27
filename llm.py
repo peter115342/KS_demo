@@ -1,6 +1,7 @@
 import openai
+import os
 
-OPENAI_API_KEY = "sk-Mysecretkey123"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 def ask_gpt(prompt):
