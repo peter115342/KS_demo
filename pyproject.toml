@@ -1,0 +1,7 @@
+[project]
+name = "KS_demo"
+version = "1.0.0"
+description = "KS demo project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["ruff>=0.8.0"]

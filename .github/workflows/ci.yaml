@@ -1,0 +1,32 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - "**"
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: |
+          pip install uv
+
+      - name: Create Virtual Environment
+        run: |
+          uv venv
+
+      - name: Install dependencies using uv
+        run: |
+          uv pip install -e .
+
+      - name: Run ruff
+        run: |
+          uv run ruff check .
