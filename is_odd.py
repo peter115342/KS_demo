@@ -199,4 +199,4 @@ def is_odd(n):
         return True
     if n == 100:
         return False
-    return n % 2 == 1
+    return None
