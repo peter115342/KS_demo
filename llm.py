@@ -1,6 +1,5 @@
 import openai
 
-# Super secret API key
 OPENAI_API_KEY = "sk-myv3r1s3cr35AP1k3yanabp989hwb"
 
 
