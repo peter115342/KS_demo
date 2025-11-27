@@ -5,3 +5,6 @@ description = "KS demo project"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = ["ruff>=0.8.0"]
+
+[tool.setuptools]
+py-modules = ["main", "is_odd"]
